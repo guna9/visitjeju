@@ -1,0 +1,82 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+
+#container {position:relative;}
+section {position:relative; width:100%; height:100vh;}
+section .wrap {width:1200px; margin:auto; height:100vh; }
+
+.fixed_section_tab {position:fixed; top:0; left:160px; width:0; height:100vh; border-left:1px solid #cfcfcf; display:flex; align-items:center;}
+.fixed_section_tab ul {display:flex; flex-direction:column; justify-content:space-around; height:150px;}
+.fixed_section_tab li {display:flex; align-items:center; cursor:pointer; height:30px;}
+.fixed_section_tab li:before {content:""; display:inline-block; border-left:5px solid #cfcfcf; border-width:15px; height:2px; transition:all 0.2s;}
+.fixed_section_tab li:hover {}
+.fixed_section_tab li:hover:before {border-left:25px solid #cfcfcf;}
+.fixed_section_tab li.active {}
+.fixed_section_tab li.active:before {border-left:25px solid #ef6d00;}
+.fixed_section_tab li a {display:none; width:130px; letter-spacing:1px; font-weight:bold; color:#ef6d00; padding-left:10px; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+.fixed_section_tab li:hover a {display:block;}
+.fixed_section_tab li.active a {display:block;}
+
+
+#main_slide {overflow:hidden;}
+#main_slide.active {margin-top:110px;}
+#main_slide .slide_wrap {width:500%; cursor:move;}
+.slide_wrap .slide_content {float:left; width:20%; height:100vh;}
+.slide_wrap .content1 {background:beige;}
+.slide_wrap .content2 {background:pink;}
+.slide_wrap .content3 {background:darkcyan;}
+.slide_wrap .content4 {background:rebeccapurple;}
+.slide_wrap .content5 {background:chartreuse;}
+#main_slide > button {position:absolute; top:55vh; }
+#main_slide > button.prev_btn {left:60px;} 
+#main_slide > button.next_btn {right:60px;}
+#main_slide .pagination {position:absolute; bottom:30px; width:100px; height:30px; display:flex; justify-content: space-between; margin-left:50%; left:-50px;}
+#main_slide .pagination li {}
+#main_slide .pagination li.active {font-weight:bold;}
+
+
+#enjoy_jeju {height:auto !important;}
+#enjoy_jeju .wrap {display:flex;}
+.thema_btn {width:27%; margin-left:10%;}
+.thema_btn ul {height:90%; display:flex; flex-direction:column; justify-content: center; padding-top:70px;}
+.thema_btn li button {display:block; padding:18px 0 18px 20px; font-size:43px; color:white; text-shadow: -1px 0 #cfcfcf, 0 1px #cfcfcf, 1px 0 #cfcfcf, 0 -1px #cfcfcf; font-family: 'Jeju Myeongjo', serif;}
+.thema_btn li button.active {color:#ef6d00; text-shadow:none; font-weight:bold;}
+.thema_content {width:63%; height:100%; box-sizing:border-box; padding:120px 0 50px 0; overflow:hidden}
+.thema_content .slide_wrap {display:flex; width:300%; height:100%;}
+.thema_content .slide_wrap article {width:100%;}
+.thema_content .slide_wrap article.thm1{background:darkcyan;}
+.thema_content .slide_wrap article.thm2{background:rebeccapurple;}
+.thema_content .slide_wrap article.thm3{background:chartreuse;}
+.thema_content .slide_wrap article.thm4{background:pink;}
+
+#enjoy_jeju .banner {height:350px;}
+#enjoy_jeju .banner.bn1 {background:#ef6d00;}
+#enjoy_jeju .banner.bn2 {background:beige;}
+
+
+#contents {}
+#contents .wrap {padding-top:150px; box-sizing:border-box;}
+#contents h1 {font-size:2.5rem; font-family: 'Jeju Myeongjo', serif; color:#cfcfcf; font-weight:normal; margin-left:80px;}
+#contents h1 b {color:#ef6d00; font-weight:normal;}
+#contents .contents_main {margin:40px 0 0 120px; display:flex; justify-content: space-between; align-items: center; height:22vw;}
+#contents .contents_main a {float:left; display:flex; justify-content: center; align-items: center; width:15vw; height:15vw; border-radius:50%; background:#e9e9e9; text-align:center; vertical-align:middle; transition:all 0.3s;}
+#contents .contents_main a:hover {width:22vw; height:22vw;}
+#contents .contents_sub {margin:30px 0 0 80px; display:flex;}
+#contents .contents_sub a {border:1px solid #cfcfcf; padding:8px 15px; border-radius:5px; font-size:13px; margin-right:8px;}
+#contents .contents_sub span {padding:8px; font-size:13px; }
+
+
+
+#festival_jeju {background:#e9e9e9;}
+#festival_jeju .wrap {display:flex; }
+#festival_jeju .event {display:flex; flex-direction:column; justify-content:space-between; height:100%; box-sizing:border-box; padding:120px 0 50px 0; margin-left:10%;; width:50%;}
+#festival_jeju .event h1 {font-size:2rem;}
+#festival_jeju .event ul {}
+#festival_jeju .event li a {width:92%; background:white; border-radius:8px; margin-bottom:10px;}
+#festival_jeju .event li img {width:40%; height:100%; float:left;}
+#festival_jeju .event li .event_text {width:60%;}
+
+#festival_jeju .festival {width:40%; box-sizing:border-box; padding:100px 0 30px 0; overflow:hidden;}
+#festival_jeju .festival ul {width:200%; height:100%;}
+#festival_jeju .festival li {display:block; float:left; width:49.5%; height:100%; margin-right:0.5%; background:white;}

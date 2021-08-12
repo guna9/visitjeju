@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+
+
+html, body {
+    padding:0; margin:0;
+    font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue, 'Roboto', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    word-break:keep-all;
+    scroll-behavior: smooth;
+}
+
+input {appearance:none; -webkit-appearance:none; -webkit-border-radius:0; } /*ios대응*/
+input[type="text" i] {padding:0; background:none;}
+input:focus {outline:none;}
+
+select{
+    -webkit-appearance:none; -moz-appearance:none; appearance:none; /*ios대응*/
+    background: white; /*화살표 배경 넣기 & 화살표 select박스 오른쪽 중앙 배치,배경 흰색*/
+}
+select::-ms-expand{display:none;} /* 화살표 없애기 for IE10, 11*/
+
+
+h1, h2, h3, h4, h5, h6, p{vertical-align: baseline; outline: 0; padding: 0; margin: 0; border: 0;}
+button {background:none; border:0; cursor:pointer; }
+ul, li {padding:0; margin:0; list-style:none;}
+a {display:block; text-decoration:none; color:black;}
+/*reset*/
+
+.jejuhallasan * {font-family: 'Jeju Hallasan', cursive;}
+.jejugothic * {font-family: 'Jeju Gothic', sans-serif;}
+.jejumyeongjo * {font-family: 'Jeju Myeongjo', serif;}
